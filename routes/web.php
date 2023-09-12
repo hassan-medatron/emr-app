@@ -128,3 +128,7 @@ Route::get('/referring-provider-report', function () {
 Route::get('/refunds', function () {
     return view('refunds');
 });
+
+Route::get('/revenue-report', function () {
+    return view('revenue-report');
+});
