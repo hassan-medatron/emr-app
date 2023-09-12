@@ -116,3 +116,7 @@ Route::get('/payments', function () {
 Route::get('/prescriptions', function () {
     return view('prescriptions');
 });
+
+Route::get('/purchase-order', function () {
+    return view('purchase-order');
+});
