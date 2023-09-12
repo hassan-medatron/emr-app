@@ -104,3 +104,7 @@ Route::get('/patient-report', function () {
 Route::get('/patient', function () {
     return view('patient');
 });
+
+Route::get('/payment-report', function () {
+    return view('payment-report');
+});
