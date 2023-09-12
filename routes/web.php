@@ -112,3 +112,7 @@ Route::get('/payment-report', function () {
 Route::get('/payments', function () {
     return view('payments');
 });
+
+Route::get('/prescriptions', function () {
+    return view('prescriptions');
+});
