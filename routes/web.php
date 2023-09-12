@@ -37,3 +37,8 @@ Route::get('/ar-aging-report', function () {
     return view('ar-aging-report');
 });
 
+Route::get('/audit-report', function () {
+    return view('audit-report');
+});
+
+
