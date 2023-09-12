@@ -100,3 +100,7 @@ Route::get('/organization', function () {
 Route::get('/patient-report', function () {
     return view('patient-report');
 });
+
+Route::get('/patient', function () {
+    return view('patient');
+});
