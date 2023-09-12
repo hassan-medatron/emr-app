@@ -15,16 +15,25 @@ use Illuminate\Support\Facades\Route;
 
 
 
+/**************************
+ * Authentication Routes
+ **************************/
 Route::get('/login', function () {
-    return view('login');
-});
+    return view('auth.login');
+})->name('login');
 
+Route::get('/forgot-password', function () {
+    return view('auth.forgot-password');
+})->name('forgot-password');
 
 Route::get('/logout', function () {
     return view('logout');
 });
 
 
+/***************
+ * App Routes
+ ***************/
 Route::get('/', function () {
     return view('dashboard');
 })->name('dashboard');
