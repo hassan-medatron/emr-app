@@ -44,3 +44,7 @@ Route::get('/audit-report', function () {
 Route::get('/authorizations', function () {
     return view('authorizations');
 });
+
+Route::get('/billing-report', function () {
+    return view('billing-report');
+});
