@@ -96,3 +96,7 @@ Route::get('/orders', function () {
 Route::get('/organization', function () {
     return view('organization');
 });
+
+Route::get('/patient-report', function () {
+    return view('patient-report');
+});
