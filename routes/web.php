@@ -60,3 +60,7 @@ Route::get('/cmns', function () {
 Route::get('/denials', function () {
     return view('denials');
 });
+
+Route::get('/deposits', function () {
+    return view('deposits');
+});
