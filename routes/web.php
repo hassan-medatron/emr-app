@@ -92,3 +92,7 @@ Route::get('/orders-report', function () {
 Route::get('/orders', function () {
     return view('orders');
 });
+
+Route::get('/organization', function () {
+    return view('organization');
+});
