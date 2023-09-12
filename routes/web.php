@@ -120,3 +120,7 @@ Route::get('/prescriptions', function () {
 Route::get('/purchase-order', function () {
     return view('purchase-order');
 });
+
+Route::get('/referring-provider-report', function () {
+    return view('referring-provider-report');
+});
