@@ -68,3 +68,7 @@ Route::get('/deposits', function () {
 Route::get('/eob-era', function () {
     return view('eob-era');
 });
+
+Route::get('/inventory-report', function () {
+    return view('inventory-report');
+});
