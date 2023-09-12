@@ -56,3 +56,7 @@ Route::get('/billing', function () {
 Route::get('/cmns', function () {
     return view('cmns');
 });
+
+Route::get('/denials', function () {
+    return view('denials');
+});
