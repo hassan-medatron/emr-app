@@ -1,4 +1,6 @@
-@include('partials._guest-header')
+@props(['title'])
+
+@include('partials._guest-header', ['title' => $title])
 
 <!-- Content -->
 {{ $slot }}

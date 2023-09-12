@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout title="Forgot Password">
     <div class="container-xxl">
         <div class="authentication-wrapper authentication-basic container-p-y">
             <div class="authentication-inner py-4">
