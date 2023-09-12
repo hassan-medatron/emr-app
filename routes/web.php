@@ -88,3 +88,7 @@ Route::get('/items', function () {
 Route::get('/orders-report', function () {
     return view('orders-report');
 });
+
+Route::get('/orders', function () {
+    return view('orders');
+});
