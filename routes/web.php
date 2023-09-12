@@ -84,3 +84,7 @@ Route::get('/invoices', function () {
 Route::get('/items', function () {
     return view('items');
 });
+
+Route::get('/orders-report', function () {
+    return view('orders-report');
+});
