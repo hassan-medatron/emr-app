@@ -33,4 +33,7 @@ Route::get('/calendar', function () {
     return view('calendar');
 });
 
+Route::get('/ar-aging-report', function () {
+    return view('ar-aging-report');
+});
 
