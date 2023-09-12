@@ -64,3 +64,7 @@ Route::get('/denials', function () {
 Route::get('/deposits', function () {
     return view('deposits');
 });
+
+Route::get('/eob-era', function () {
+    return view('eob-era');
+});
