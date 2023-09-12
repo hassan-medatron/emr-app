@@ -52,3 +52,7 @@ Route::get('/billing-report', function () {
 Route::get('/billing', function () {
     return view('billing');
 });
+
+Route::get('/cmns', function () {
+    return view('cmns');
+});
