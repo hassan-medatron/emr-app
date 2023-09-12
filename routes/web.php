@@ -48,3 +48,7 @@ Route::get('/authorizations', function () {
 Route::get('/billing-report', function () {
     return view('billing-report');
 });
+
+Route::get('/billing', function () {
+    return view('billing');
+});
