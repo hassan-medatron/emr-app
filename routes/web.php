@@ -124,3 +124,7 @@ Route::get('/purchase-order', function () {
 Route::get('/referring-provider-report', function () {
     return view('referring-provider-report');
 });
+
+Route::get('/refunds', function () {
+    return view('refunds');
+});
