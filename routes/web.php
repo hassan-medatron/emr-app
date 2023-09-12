@@ -80,3 +80,7 @@ Route::get('/inventory', function () {
 Route::get('/invoices', function () {
     return view('invoices');
 });
+
+Route::get('/items', function () {
+    return view('items');
+});
