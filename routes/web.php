@@ -76,3 +76,7 @@ Route::get('/inventory-report', function () {
 Route::get('/inventory', function () {
     return view('inventory');
 });
+
+Route::get('/invoices', function () {
+    return view('invoices');
+});
