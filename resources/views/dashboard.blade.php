@@ -3,7 +3,7 @@
     <div class="container-fluid flex-grow-1 container-p-y">
         <div class="row">
             <div class="col-sm-4 col-md-4 col-lg-4 breadcrum-control-left">
-                <x-breadcrumb />
+                <x-breadcrumb title=""/>
             </div>
             <div class="col-md-8 col-lg-8 col-sm-8 breadcrum-control-right">
                 <div class="btn-toolbar demo-inline-spacing" role="toolbar" aria-label="Toolbar with button groups">
