@@ -136,3 +136,7 @@ Route::get('/revenue-report', function () {
 Route::get('/settings', function () {
     return view('settings');
 });
+
+Route::get('/users', function () {
+    return view('users');
+});
