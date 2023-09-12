@@ -132,3 +132,7 @@ Route::get('/refunds', function () {
 Route::get('/revenue-report', function () {
     return view('revenue-report');
 });
+
+Route::get('/settings', function () {
+    return view('settings');
+});
