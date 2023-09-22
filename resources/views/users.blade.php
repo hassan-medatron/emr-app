@@ -5,5 +5,16 @@
                 <x-breadcrumb title="Users" />
             </div>
         </div>
+
+        <div class="card">
+            <div class="card-header">Users List</div>
+            <div class="card-body">
+                {{ $dataTable->table() }}
+            </div>
+        </div>
     </div>
+
+    @push('scripts')
+        {{ $dataTable->scripts() }}
+    @endpush
 </x-app-layout>

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UsersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -134,9 +135,11 @@ Route::get('/settings', function () {
     return view('settings');
 })->name('settings');
 
-Route::get('/users', function () {
-    return view('users');
-})->name('users');
+// Route::get('/users', function () {
+//     return view('users');
+// })->name('users');
+
+Route::get('/users', [UsersController::class, 'index'])->name('users');
 
 Route::get('/claims-reconsiderations', function () {
     return view('claims-reconsiderations');
