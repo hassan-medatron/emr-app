@@ -1,4 +1,4 @@
-<x-guest-layout title="Login">
+<x-guest-layout>
     <div class="container-xxl">
         <div class="authentication-wrapper authentication-basic container-p-y">
             <div class="authentication-inner">
@@ -7,9 +7,9 @@
                     <div class="card-body">
                         <!-- Logo -->
                         <div class="app-brand justify-content-center">
-                            <a href="dashboard.html" class="app-brand-link gap-2">
+                            <a href="{{ route('dashboard') }}" class="app-brand-link gap-2">
                                 <img src="assets/img/medatron/logo.png" width="40">
-                                <span class="app-brand-text demo text-body">Medatron</span>
+                                <span class="app-brand-text demo text-body">{{ config('app.name') }}</span>
                             </a>
                         </div>
                         <!-- /Logo -->
@@ -22,7 +22,7 @@
                             <div class="mb-3 form-password-toggle">
                                 <div class="d-flex justify-content-between">
                                     <label class="form-label" for="password">Password</label>
-                                    <a href="forget.html">
+                                    <a href="{{ route('password.request') }}">
                                         <small>Forgot Password?</small>
                                     </a>
                                 </div>

@@ -1,4 +1,4 @@
-<x-guest-layout title="Forgot Password">
+<x-guest-layout>
     <div class="container-xxl">
         <div class="authentication-wrapper authentication-basic container-p-y">
             <div class="authentication-inner py-4">
@@ -7,9 +7,9 @@
                     <div class="card-body">
                         <!-- Logo -->
                         <div class="app-brand justify-content-center">
-                            <a href="dashboard.html" class="app-brand-link gap-2">
+                            <a href="{{ route('dashboard') }}" class="app-brand-link gap-2">
                                 <img src="assets/img/medatron/logo.png" width="40">
-                                <span class="app-brand-text demo text-body">Medatron</span>
+                                <span class="app-brand-text demo text-body">{{ config('app.name') }}</span>
                             </a>
                         </div>
                         <!-- /Logo -->
@@ -24,7 +24,7 @@
                             <button class="btn btn-primary d-grid w-100">Send Reset Link</button>
                         </form>
                         <div class="text-center">
-                            <a href="login.html" class="d-flex align-items-center justify-content-center">
+                            <a href="{{ route('login') }}" class="d-flex align-items-center justify-content-center">
                                 <i class="bx bx-chevron-left scaleX-n1-rtl bx-sm"></i>
                                 Back to login
                             </a>

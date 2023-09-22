@@ -1,6 +1,6 @@
 @props(['routesArray' => [], 'iconClass', 'menuGroupName'])
 
-<li class="menu-item {{ request()->routeIs($routesArray) ? 'open' : '' }}">
+<li class="menu-item {{ request()->routeIs($routesArray) ? 'open active' : '' }}">
 
     <a href="javascript:void(0);" class="menu-link menu-toggle">
         @if (!empty($iconClass))

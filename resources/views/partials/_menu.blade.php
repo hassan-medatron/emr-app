@@ -4,7 +4,7 @@
             <span class="app-brand-logo demo">
                 <img src="assets/img/medatron/logo.png" width="40">
             </span>
-            <span class="app-brand-text demo menu-text ms-2">Medatron</span>
+            <span class="app-brand-text demo menu-text ms-2">{{ config('app.name') }}</span>
         </a>
 
         <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -78,10 +78,8 @@
             <x-menu-item :href="route('purchase-order')" :active="request()->routeIs('purchase-order')">Purchase Orders</x-menu-item>
         </x-menu-items-group>
 
-        <x-menu-items-group :routesArray="['dashboard']" iconClass="bx bx-git-pull-request" menuGroupName="Synchronization">
-            <x-menu-item :href="route('dashboard')" :active="request()->routeIs('dashboard')">Niko</x-menu-item>
-            <x-menu-item :href="route('dashboard')" :active="request()->routeIs('dashboard')">Bitrix</x-menu-item>
+        <x-menu-items-group :routesArray="['claims-reconsiderations']" iconClass="bx bx-bot" menuGroupName="Automations">
+            <x-menu-item :href="route('claims-reconsiderations')" :active="request()->routeIs('claims-reconsiderations')">Claims Recon.</x-menu-item>
         </x-menu-items-group>
-
     </ul>
 </aside>
